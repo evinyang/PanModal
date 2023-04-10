@@ -55,15 +55,11 @@ open class DimmedView: UIView {
 
     // MARK: - Initializers
 
-    public init(dimColor: UIColor = UIColor.black.withAlphaComponent(0.7)) {
-        super.init(frame: .zero)
+    convenience init(dimColor: UIColor = UIColor.black.withAlphaComponent(0.7)) {
+        self.init(frame: .zero)
         alpha = 0.0
         backgroundColor = dimColor
         addGestureRecognizer(tapGesture)
-    }
-
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError()
     }
 
     // MARK: - Event Handlers
