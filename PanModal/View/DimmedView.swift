@@ -28,7 +28,7 @@ open class DimmedView: UIView {
     /**
      The state of the dimmed view
      */
-    var dimState: DimState = .off {
+    open var dimState: DimState = .off {
         didSet {
             switch dimState {
             case .max:
