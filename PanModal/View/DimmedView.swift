@@ -55,7 +55,7 @@ open class DimmedView: UIView {
 
     // MARK: - Initializers
 
-    init(dimColor: UIColor = UIColor.black.withAlphaComponent(0.7)) {
+    convenience init(dimColor: UIColor = UIColor.black.withAlphaComponent(0.7)) {
         super.init(frame: .zero)
         alpha = 0.0
         backgroundColor = dimColor
