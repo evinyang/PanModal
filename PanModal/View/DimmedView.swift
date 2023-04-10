@@ -17,7 +17,7 @@ open class DimmedView: UIView {
      Represents the possible states of the dimmed view.
      max, off or a percentage of dimAlpha.
      */
-    public enum DimState {
+    enum DimState {
         case max
         case off
         case percent(CGFloat)
@@ -28,7 +28,7 @@ open class DimmedView: UIView {
     /**
      The state of the dimmed view
      */
-    open var dimState: DimState = .off {
+    var dimState: DimState = .off {
         didSet {
             switch dimState {
             case .max:
